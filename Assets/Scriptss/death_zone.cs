@@ -1,19 +1,33 @@
 using UnityEngine;
 
-public class DeathZoneMovement : MonoBehaviour
+public class DeathZoneAccelerating : MonoBehaviour
 {
-    [Header("Velocidade da Death Zone")]
-    public float speed = 5f; // velocidade no eixo Z (quanto maior, mais rápido ela anda)
+    [Header("Velocidade inicial e aceleração")]
+    public float initialSpeed = 5f;    // velocidade inicial
+    public float acceleration = 1f;  // quanto a velocidade aumenta por segundo
+    public float maxSpeed = 50f;       // velocidade máxima
+
+    private float currentSpeed;
+
+    void Start()
+    {
+        currentSpeed = initialSpeed;
+    }
 
     void Update()
     {
-        // move a Death Zone para frente no eixo Z (diminuindo Z)
-        transform.Translate(0, 0, speed * Time.deltaTime, Space.World);
+        // move no eixo Z negativo
+        transform.Translate(0, 0, currentSpeed * Time.deltaTime, Space.World);
+
+        // aumenta a velocidade até o máximo
+        currentSpeed += acceleration * Time.deltaTime;
+        if (currentSpeed > maxSpeed)
+            currentSpeed = maxSpeed;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // destrói qualquer objeto que seja parte da rua
+        // destrói tudo que seja raiz da rua ou qualquer outro objeto
         if (other.transform.root.CompareTag("Road"))
         {
             Destroy(other.transform.root.gameObject);
