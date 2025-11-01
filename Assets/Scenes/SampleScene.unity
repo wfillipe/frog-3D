@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 375533637}
   m_Layer: 0
   m_Name: Death_zone
-  m_TagString: Untagged
+  m_TagString: DeathZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871fea995267a43498f6541a5ae64905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 1
+  speed: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +965,10 @@ PrefabInstance:
     - target: {fileID: 2416860782331058660, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
       propertyPath: m_Name
       value: Ruapronta
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416860782331058660, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
+      propertyPath: m_TagString
+      value: Road
       objectReference: {fileID: 0}
     - target: {fileID: 5448311513695231909, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
       propertyPath: m_LocalPosition.x

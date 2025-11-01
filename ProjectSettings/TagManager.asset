@@ -6,6 +6,8 @@ TagManager:
   tags:
   - rua
   - RoadTrigger
+  - DeathZone
+  - Road
   layers:
   - Default
   - TransparentFX
