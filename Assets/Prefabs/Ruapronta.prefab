@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3503729499244819123}
   m_Layer: 0
   m_Name: Ruapronta
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
   carPrefab: {fileID: 8952020924664498579, guid: 7289d6b0b27a01349be88b5415cdff0d, type: 3}
   leftSpawnPoint: {fileID: 2722349052766013090}
   rightSpawnPoint: {fileID: 7987953168770981829}
-  spawnInterval: 3
+  spawnInterval: 1.5
   carSpeed: 7
 --- !u!114 &3503729499244819123
 MonoBehaviour:
@@ -149,8 +149,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 34.22607, y: 5.6825833, z: 0.059508324}
-  m_Center: {x: -2.488325, y: 2.3412917, z: 0.47024584}
+  m_Size: {x: 34.22607, y: 6.7104235, z: 0.059508324}
+  m_Center: {x: -2.488325, y: 1.8273716, z: 0.47024584}
 --- !u!114 &7352060489917803572
 MonoBehaviour:
   m_ObjectHideFlags: 0

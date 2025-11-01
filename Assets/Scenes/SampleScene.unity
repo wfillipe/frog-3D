@@ -458,7 +458,7 @@ Transform:
   m_GameObject: {fileID: 375533634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59896, y: 7.72, z: -25.86}
+  m_LocalPosition: {x: -0.59896, y: 7.72, z: -37.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871fea995267a43498f6541a5ae64905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 0
+  speed: 5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ Transform:
   m_GameObject: {fileID: 2020039142}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.25, y: 8, z: -21.74}
+  m_LocalPosition: {x: 2.99, y: 8.19, z: -21.74}
   m_LocalScale: {x: 2.01, y: 1, z: 0.53}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -966,9 +966,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruapronta
       objectReference: {fileID: 0}
-    - target: {fileID: 2416860782331058660, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
-      propertyPath: m_TagString
-      value: Road
+    - target: {fileID: 4391276444027827146, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
+      propertyPath: spawnInterval
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5448311513695231909, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
       propertyPath: m_LocalPosition.x
