@@ -1,30 +1,39 @@
 using UnityEngine;
 
-public class DestroyerCollider : MonoBehaviour
+public class DeathZoneAccelerating : MonoBehaviour
 {
-    public float speed = 5f;
+    [Header("Velocidade inicial e aceleração")]
+    public float initialSpeed = 5f;    // velocidade inicial
+    public float acceleration = 1f;  // quanto a velocidade aumenta por segundo
+    public float maxSpeed = 50f;       // velocidade máxima
 
-    private void Update()
+    private float currentSpeed;
+
+    void Start()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        currentSpeed = initialSpeed;
+    }
+
+    void Update()
+    {
+        // move no eixo Z negativo
+        transform.Translate(0, 0, currentSpeed * Time.deltaTime, Space.World);
+
+        // aumenta a velocidade até o máximo
+        currentSpeed += acceleration * Time.deltaTime;
+        if (currentSpeed > maxSpeed)
+            currentSpeed = maxSpeed;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // se encostar no player -> Game Over
-        if (other.CompareTag("Player"))
+        // destrói tudo que seja raiz da rua ou qualquer outro objeto
+        if (other.transform.root.CompareTag("Road"))
         {
-            Debug.Log("Game Over! Player atingido pelo destruidor.");
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("rua") || other.CompareTag("carro") || other.CompareTag("carro2"))
-        {
-            // destrói ruas e carros
-            Destroy(other.gameObject);
+            Destroy(other.transform.root.gameObject);
         }
         else
         {
-            // destrói qualquer outro objeto que não precise ficar
             Destroy(other.gameObject);
         }
     }
