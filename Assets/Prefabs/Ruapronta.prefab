@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 7758584199455136354}
   - component: {fileID: 7266603431658525261}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: carro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
