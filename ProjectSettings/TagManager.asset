@@ -8,6 +8,8 @@ TagManager:
   - RoadTrigger
   - DeathZone
   - Road
+  - CinemachineTarget
+  - Car
   layers:
   - Default
   - TransparentFX
