@@ -98,9 +98,9 @@ MonoBehaviour:
   - {fileID: 8952020924664498579, guid: 14f65996bdcbe314f99ec6cf60d73785, type: 3}
   leftSpawnPoint: {fileID: 2722349052766013090}
   rightSpawnPoint: {fileID: 7987953168770981829}
-  minSpawnInterval: 1.5
+  minSpawnInterval: 1
   maxSpawnInterval: 3.5
-  carSpeed: 7
+  carSpeed: 8
 --- !u!114 &3503729499244819123
 MonoBehaviour:
   m_ObjectHideFlags: 0
