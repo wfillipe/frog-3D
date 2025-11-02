@@ -12,6 +12,7 @@ public class CarSpawner : MonoBehaviour
 
     private float timer = 0f;
     private float currentInterval;
+    private int spawnCount = 0;          // contador de spawns por rua
 
     void Start()
     {
@@ -41,12 +42,16 @@ public class CarSpawner : MonoBehaviour
         GameObject prefabLeft = carPrefabs[Random.Range(0, carPrefabs.Length)];
         GameObject prefabRight = carPrefabs[Random.Range(0, carPrefabs.Length)];
 
-        // spawn da esquerda → direita
+        // spawn da esquerda > direita
         GameObject carL = Instantiate(prefabLeft, leftSpawnPoint.position, Quaternion.identity);
         carL.AddComponent<CarMovement>().Initialize(Vector3.right, carSpeed);
 
-        // spawn da direita → esquerda
+        // spawn da direita > esquerda
         GameObject carR = Instantiate(prefabRight, rightSpawnPoint.position, Quaternion.identity);
         carR.AddComponent<CarMovement>().Initialize(Vector3.left, carSpeed);
+
+        // incrementa o contador e mostra no console
+        spawnCount += 2; // pois spawnamos dois carros (esquerda e direita)
+        Debug.Log($"[CarSpawner - {gameObject.name}] Total de carros spawnados: {spawnCount}");
     }
 }
