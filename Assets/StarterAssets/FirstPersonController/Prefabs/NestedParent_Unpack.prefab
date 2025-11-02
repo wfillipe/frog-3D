@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRoadSpawner
   roadPrefab: {fileID: 2416860782331058660, guid: 60e6fdf597bbc604588d30dc52419363, type: 3}
-  roadLength: 5.92
+  roadLength: 22.8
 --- !u!114 &4370429050593748097
 MonoBehaviour:
   m_ObjectHideFlags: 0

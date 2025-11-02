@@ -98,9 +98,9 @@ MonoBehaviour:
   - {fileID: 8952020924664498579, guid: 14f65996bdcbe314f99ec6cf60d73785, type: 3}
   leftSpawnPoint: {fileID: 2722349052766013090}
   rightSpawnPoint: {fileID: 7987953168770981829}
-  minSpawnInterval: 1
-  maxSpawnInterval: 3.5
-  carSpeed: 8
+  minSpawnInterval: 2
+  maxSpawnInterval: 5
+  carSpeed: 15
 --- !u!114 &3503729499244819123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,7 +373,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.84251, y: 5.89073, z: -14.5221195}
-  m_LocalScale: {x: 3.4, y: 1, z: 0.59}
+  m_LocalScale: {x: 3.4, y: 1, z: 0.79}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5448311513695231909}
