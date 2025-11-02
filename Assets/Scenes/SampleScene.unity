@@ -567,8 +567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871fea995267a43498f6541a5ae64905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  initialSpeed: 1
-  acceleration: 0.1
+  initialSpeed: 0
+  acceleration: 0
   maxSpeed: 10
 --- !u!1 &410087039
 GameObject:
@@ -878,7 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.21
+      value: 3.65
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalRotation.w

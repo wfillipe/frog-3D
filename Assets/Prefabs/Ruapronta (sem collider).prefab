@@ -134,7 +134,7 @@ MonoBehaviour:
   rightSpawnPoint: {fileID: 7315983243604605729}
   minSpawnInterval: 2
   maxSpawnInterval: 5
-  carSpeed: 15
+  carSpeed: 10
 --- !u!114 &5886502676996572449
 MonoBehaviour:
   m_ObjectHideFlags: 0

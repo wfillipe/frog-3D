@@ -1,20 +1,23 @@
 using UnityEngine;
 
-public class PlayerPlatformAttach : MonoBehaviour
+public class PlayerCarAttach : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
+        // Verifica se o player encostou em um carro
         if (collision.gameObject.CompareTag("Car"))
         {
-            transform.parent = collision.transform; // o player “gruda” no carro
+            // Torna o player filho do carro para seguir seu movimento
+            transform.SetParent(collision.transform);
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
+        // Quando o player sai do carro, ele se solta
         if (collision.gameObject.CompareTag("Car"))
         {
-            transform.parent = null; // solta quando sai do carro
+            transform.SetParent(null);
         }
     }
 }
